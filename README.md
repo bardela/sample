@@ -3,7 +3,7 @@ It displays tweeds in a map for a given city
 
 ## How to use it
 ### 1) Intall the rest of packages that this project needs:
->  php composer update
+>  composer update
 ### 2) Set up the config file(src/config.pgp)
 ```
  $gmapKey = ''; //Insert your GOOGLE API KEY here
