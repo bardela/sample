@@ -1,0 +1,88 @@
+body, html {
+  height: 99%;
+  width: 99%;
+}
+body{
+    background-color:#474747;
+}
+img[src*="http://pbs.twimg.com"]{
+  border-radius:50%;
+}
+
+h1{
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 10px;
+  color: #000;
+  text-shadow: 0 2px 3px #555555;
+  font-family: Tahoma;
+  position: absolute;
+  z-index: 5000;
+  display: none;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  margin-top:10px;
+}
+
+#map_container{
+  position: relative;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 42.25%;
+    padding-top: 20px;
+    position: relative;
+}
+.row {
+  margin-top: 0px;
+  position: relative;
+  width: 99%;
+  height: 30px;
+  margin-top: 10px;
+}
+.bar {
+  width: 33%;
+  height: 100%;
+  border: 0;
+  float: left;
+}
+
+.blue {
+  background: #52a4d6;
+}
+.history_list{
+  width: 33%;
+  position: absolute;
+  z-index: 1000;
+  bottom: 100%;
+  background-color: #fff;
+}
+.history_list > ul {
+  padding: 0;
+  margin: 0;
+}
+.history_list > ul > li {
+  list-style: none;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+#history_button {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+#history_button > div.middle {
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn.btn-default.bar.blue {
+  cursor: pointer; 
+}

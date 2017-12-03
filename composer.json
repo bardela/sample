@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpfastcache/phpfastcache": "^6.0",
+        "j7mbo/twitter-api-php": "^1.0"
+    }
+}

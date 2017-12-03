@@ -1,2 +1,2 @@
 # Sample Project
-# It display tweeds in a map for a given city
+# It displays tweeds in a map for a given city
