@@ -29,7 +29,6 @@ function getTweeds($search, $lat, $long)
             ];
         $requestMethod = 'GET';
         $getfield = '?q='.$search.'&geocode='.$lat.','.$long.','.$defaultKM;
-        //$getfield = '?q=test&geocode='.$lat.','.$long.',50mi&count=100';
 
 
         $twitter = new TwitterAPIExchange($settings);
@@ -37,7 +36,6 @@ function getTweeds($search, $lat, $long)
             ->buildOauth($url, $requestMethod)
             ->performRequest();
         $result = json_decode($response);
-        //debug($result->statuses);
         
         $cached->set($result, 3600);// 1 hour
         $InstanceCache->save($cached);
@@ -152,7 +150,6 @@ switch ($action) {
         break;
 
     default:
-        # code...
         break;
 }
 echo json_encode($result);
