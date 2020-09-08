@@ -18,10 +18,6 @@ var App = window.App = new Vue({
         }
     },
 
-    ready: function() {
-        //this.initMap();
-    },
-
     methods: {
         fetchMessages: function() {
             this.$http.get('/api/messages', function(messages) {
@@ -118,9 +114,6 @@ function initMap() {
 
 
 function addMarker(tweed) {
-    //tweed.text
-    //tweed.userId
-    //tweed.userName
     var marker = new google.maps.Marker({
       position: {lat: tweed.lat, lng: tweed.lng},
       icon: tweed.image,
